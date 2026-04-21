@@ -51,7 +51,7 @@ Here's the breakdown of the top data analyst jobs in 2023:
 
 * **Repeated “Data Analyst” roles don’t add insight** → Multiple identical entries (~110k) indicate you’re looking at raw data, not trends—aggregation is needed for meaningful conclusions.
 
-![Top Paying Roles](GRAPHS/Q1.png)
+![Top Paying Roles](Resources/Q1.png)
 *Bar graph visualizing the salary for the top 10 jobs for data analysts; ChatGPT generated this graph from my SQL query results*
 
 ### 2. Skills for Top Paying Jobs
@@ -97,7 +97,7 @@ Limit 10;
 * **Hybrid roles demand broader skillsets** → The “Data analyst hybrid” role includes SQL, Python, and even Scala, showing that higher-paying roles often expect cross-functional or engineering-adjacent skills.
 
 
-![Top Paying Skills](GRAPHS/Q2.png)
+![Top Paying Skills](Resources/Q2.png)
 *Bar graph visualizing the count of skills for the top average salary by skills for data analysts; ChatGPT generated this graph from my SQL query results*
 
 ### 3. In-Demand Skills for Data Analysts
@@ -128,7 +128,7 @@ GROUP BY skills_dim.skills
 ORDER BY demand_count DESC
 LIMIT 5;
 ```
-![In Demand Skills](GRAPHS/Q3.png)
+![In Demand Skills](Resources/Q3.png)
 *Bar graph visualizing the count of skills for the most demanded jobs for data analysts; ChatGPT generated this graph from my SQL query results*
 
 * **SQL dominates the market** → almost **2x demand vs Tableau/Power BI** → this is the *core skill*, not optional
@@ -153,7 +153,7 @@ GROUP BY skills_dim.skills
 ORDER BY avg_salary 
 LIMIT 25;
 ```
-![Highest Paying Skills](GRAPHS/Q4.png)
+![Highest Paying Skills](Resources/Q4.png)
 *Bar graph visualizing the count of skills for the top 10 paying jobs for data analysts; ChatGPT generated this graph from my SQL query results*
 
 * **Top-paying skills are not beginner tools** → Looker, Java, SAS, AWS sit at the top → these are **advanced / specialized skills**, not entry-level
@@ -210,7 +210,7 @@ WHERE demand_count.demand_count > 10
 ORDER BY salary_avg.avg_salary DESC, demand_count.demand_count DESC
 ```
 
-![Most Optimal Skills](GRAPHS/Q5.png)
+![Most Optimal Skills](Resources/Q5.png)
 *Bar graph visualizing the count of skills for the most optimal  jobs for data analysts; ChatGPT generated this graph from my SQL query results*
 ---
 
